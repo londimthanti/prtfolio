@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+body {
+  background: #0f172a;
+  color: #e5e7eb;
+  line-height: 1.6;
+}
+
+/* NAV */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background: #020617;
+  position: sticky;
+  top: 0;
+}
+
+nav h1 {
+  color: #38bdf8;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav ul li a {
+  color: #e5e7eb;
+  margin-left: 20px;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  color: #38bdf8;
+}
+
+/* HERO */
+.hero {
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.hero h2 {
+  font-size: 2.8rem;
+}
+
+.hero h3 {
+  color: #38bdf8;
+  margin: 10px 0;
+}
+
+.hero p {
+  max-width: 600px;
+  margin: 20px auto;
+}
+
+/* BUTTON */
+.btn {
+  display: inline-block;
+  padding: 12px 30px;
+  background: #38bdf8;
+  color: #020617;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* SECTIONS */
+section {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+/* SKILLS */
+.skills-grid span {
+  display: inline-block;
+  background: #1e293b;
+  margin: 10px;
+  padding: 15px 25px;
+  border-radius: 10px;
+}
+
+/* PROJECTS */
+.project {
+  background: #020617;
+  max-width: 700px;
+  margin: 20px auto;
+  padding: 25px;
+  border-radius: 12px;
+}
+
+/* CONTACT */
+#contact p {
+  margin: 10px 0;
+}
+
+/* FADE-IN ANIMATION */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hero, section {
+  animation: fadeInUp 1s ease forwards;
+}
+
+/* BUTTON HOVER EFFECT */
+.btn {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(56, 189, 248, 0.4);
+}
+
+/* PROJECT HOVER */
+.project {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
+}
+
