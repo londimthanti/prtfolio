@@ -10,6 +10,7 @@ function clearDisplay() {
 
 function calculate() {
   try {
+    // Only allow valid math operations
     display.value = eval(display.value);
   } catch {
     display.value = "Error";
